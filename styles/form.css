@@ -1,0 +1,104 @@
+@import './colors.css';
+
+.active-input{
+    translate: 0px -20px;
+}
+.center-form{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    min-height: 100dvh; /* remove it */
+    position: absolute;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(10px);
+}
+#form-style{
+    max-width: 500px;
+    padding: 1.5rem;
+    box-shadow: 0px 0px 2px gray;
+    border-radius: 6px;
+    background: var(--primary-white);
+    position: relative;
+}
+#close-form{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 6px;
+    top: 6px;
+    cursor: pointer;
+}
+.form-title{
+    margin: .7em 0;
+}
+.inp-container{
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+.inp-container label{
+    color: var(--primary-gray);
+    position: absolute;
+    left: 6px;
+    bottom: 10px;
+    transition: translate 400ms ease;
+}
+
+.inp-container .inp{
+    outline: none;
+    width: 100%;
+    padding: .5rem .2rem;
+    /* padding-bottom: 0; */
+    border: none;
+    border-bottom: 1px solid var(--secondary-gray);
+    font-size: 18px;
+}
+.inp-sub-container{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+}
+.agree-with{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    cursor: pointer;
+    margin: 1rem 0;
+    color: var(--primary-gray);
+}
+#agree-condition{
+    accent-color: var(--primary-pink);
+    border: 2px solid var(--primary-pink)!important;
+    width: 20px;
+    height: 20px;
+}
+
+.btn-container{
+    text-align: center;
+}
+.btn-submit{
+    padding: .8rem 1rem;
+    width: 100%;
+    font-weight: 600;
+    font-size: 17px;
+    border: none;
+    border-radius: 6px;
+    color: var(--primary-white);
+    background: var(--primary-pink);
+}
+
+@media screen and (max-width:570px) {
+    #form-style{
+        margin: 0 1rem;
+    }
+    #close-form{
+        cursor: default;
+    }
+    .agree-with{
+        cursor: default;
+    }
+    .inp-sub-container{
+        display: block;
+    }
+}
