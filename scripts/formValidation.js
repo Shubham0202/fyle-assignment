@@ -3,7 +3,6 @@ const toolTip = document.querySelectorAll('.tool-tip');
 const formLabels = document.querySelectorAll('.inp-container label');
 const submitBtn = document.querySelector('.btn-submit');
 
-console.log(toolTip)
 // Function to show/hide tooltip based on input value
 function toggleTooltip(input, tooltip,label) {
   if (input.value.trim() === "") {
