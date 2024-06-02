@@ -11,7 +11,7 @@
 
 <body>
     <!-- form -->
-    <div class="center-form contact-form hidden">
+    <div class="center-form contact-form hidden"qq>
         <form action="https://getform.io/f/pamqevza" method="post" id="form-style">
             <img id="close-form" src="assets/cross.svg" alt="cross svg">
             <h2 class="form-title poppins-bold">Talk to us</h2>
@@ -19,16 +19,19 @@
             <div class="inp-container">
                 <label for="email">Work email <span class="required">*</span> </label>
                 <input id="email" type="email" name="email" class="inp" required>
+                <div class="tool-tip hidden">Email is required *</div>
             </div>
 
             <div class="inp-sub-container">
                 <div class="inp-container">
                     <label for="fname">First name <span class="required">*</span> </label>
-                    <input id="fname" type="text" name="fullName" class="inp" required>
+                    <input id="fname" type="text" name="fullName" class="inp" required maxlength="256">
+                    <div class="tool-tip hidden">First name is required *</div>
                 </div>
                 <div class="inp-container">
                     <label for="lname">Last name <span class="required">*</span> </label>
-                    <input id="lname" type="text" name="lastName" class="inp" required>
+                    <input id="lname" type="text" name="lastName" class="inp" required maxlength="256">
+                    <div class="tool-tip hidden">Last name is required *</div>
                 </div>
             </div>
             <label for="agree-condition" class="agree-with">
@@ -360,7 +363,7 @@
         </section>
 
         <section class="sec-5 expert-growth">
-            <h3 class="sec-sub-heading items-center my-2">our project</h3>
+            <h3 class="sec-sub-heading items-center my-2">expert growth</h3>
             <h2 class="sec-main-heading items-center">Why We Are Best</h2>
             <div class="why-section-content">
 
@@ -414,4 +417,5 @@
 <script src="scripts/selectProject.js"></script>
 <script src="scripts/isFormActive.js"></script>
 <script src="scripts/slideImages.js"></script>
+<script src="formValidation.js"></script>
 </html>

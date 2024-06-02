@@ -3,6 +3,9 @@
 .active-input{
     translate: 0px -20px;
 }
+.tool-tip{
+    color: red;
+}
 .center-form{
     display: grid;
     place-items: center;
@@ -40,10 +43,13 @@
     color: var(--primary-gray);
     position: absolute;
     left: 6px;
-    bottom: 10px;
+    bottom: 10px; /*28px */
     transition: translate 400ms ease;
+    cursor:text;
 }
-
+.label-bottom{
+    bottom: 28px!important;
+}
 .inp-container .inp{
     outline: none;
     width: 100%;
@@ -86,6 +92,7 @@
     border-radius: 6px;
     color: var(--primary-white);
     background: var(--primary-pink);
+    cursor: pointer;
 }
 
 @media screen and (max-width:570px) {
@@ -100,5 +107,8 @@
     }
     .inp-sub-container{
         display: block;
+    }
+    .btn-submit{
+        cursor: default;
     }
 }
