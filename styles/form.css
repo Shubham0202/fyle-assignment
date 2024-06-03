@@ -11,10 +11,11 @@
     place-items: center;
     width: 100%;
     min-height: 100dvh; /* remove it */
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     backdrop-filter: blur(10px);
+    z-index: 100;
 }
 #form-style{
     max-width: 500px;
