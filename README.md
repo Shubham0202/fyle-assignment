@@ -1,1 +1,1 @@
-https://shubham0202.github.io/fyle-assignment/
+https://fyle-assignment-eta.vercel.app/
